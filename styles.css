@@ -1,14 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*
+    Tapşırıqda verilən yazı ölçüləri şəkil ilə uyğun deyil.
+    Mən tapşırıqda verilən ölçülərə uyğun formada sənədi tərtib etdim.
+    
+    Image: https://learn.alg.academy/uploads/2021/11/Screenshot_25_1636953707.png
+    Task:
+        Şrift — Montserrat,
+        başlıq mətni — 44px,
+        tarix mətni — 12px,
+        əsas m0ətn — 16px.
+*/
+
 body {
     font-family: Montserrat;
 }
 
-div {
-    width: 650px;
+h1 {
+    font-size: 44px;
+}
+
+p::before {
+    content: attr(data-date);
+    display: block;
+    font-size: 12px;
 }
 
 p {
-    border-bottom: 1px solid black;
+    font-size: 16px;
     padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    width: 620px;
 }
