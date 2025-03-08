@@ -3,3 +3,12 @@
 body {
     font-family: Montserrat;
 }
+
+div {
+    width: 650px;
+}
+
+p {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
